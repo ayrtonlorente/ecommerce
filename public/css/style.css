@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root {
+    --bg-color1: #fe7676;
+}
+
+body {
+    /*aca quiero cambiar la fuente de todo lo que no sea titulos*/
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ff_titulo {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.bg-color1 {
+    background-color: var(--bg-color1);
+}
+
+.color1 {
+    color: var(--bg-color1);
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+    
+}
+
+@media screen and (min-width:575.98px){
+    nav.navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#bienvenida {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+
+.carousel-item{
+    max-height: 500px;
+}
+
+
+.logo,
+.imagen_detalle {
+    border-radius: 50%;
+    border: 5px solid #eaeaea;
+    box-shadow: 3px 3px 8px #303030;
+}
+
+
+/* Detalle de Producto */
+
+/* Imagen Detalle de Producto */
+
+.imagen_detalle {
+    max-width: 50%;
+}
+
+/* Tarjeta de Productos */
+
+/* Imagen de Tarjeta  */
+
+.card img {
+    max-height: 200px;
+    background-color: #303030;
+}
+
+th div#exampleModal.modal.fade.show div.modal-dialog div.modal-content {
+    color: black;
+}
+
+th div#exampleModalUsuario.modal.fade.show div.modal-dialog div.modal-content {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width:100%;
+    }
+    thead th {
+        display: block;
+        text-align:center;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #F0F0F0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+/* Quitar flechas internas del campo input tipo Number */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
